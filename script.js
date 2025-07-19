@@ -32,7 +32,7 @@ function makePassword(){
     const includeSymbols = symbolsCheckbox.checked
 
     if(!includeUppercase && !includeLowercase && !includeNumbers && !includeSymbols){
-        alert("Please select at leasrt one char type.");
+        alert("Please select at least one char type.");
         return;
     }
     const newPassword = createRandomPassword(length, includeUppercase, includeLowercase, includeNumbers, includeSymbols)
